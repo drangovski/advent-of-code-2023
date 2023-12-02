@@ -6,7 +6,7 @@ RED = 12
 GREEN = 13
 BLUE = 14
 
-games_power = []
+game_cubes_power = []
 for line in document_lines:
     game_id = line.split(": ")[0].strip().split(" ")[1]
     game_subsets = line.split(": ")[1].strip().split("; ")
@@ -26,8 +26,8 @@ for line in document_lines:
                 blue_cubes_count = color.split(" ")[0]
                 blue_cubes.append(int(blue_cubes_count))	
  
-    game_cubes_power = max(red_cubes) * max(green_cubes) * max(blue_cubes)
-    games_power.append(game_cubes_power)
+    game_cube_power = max(red_cubes) * max(green_cubes) * max(blue_cubes)
+    game_cubes_power.append(game_cube_power)
     
-# Total sum of the game ids
-print(sum(games_power))
+# Total cubes power
+print(sum(game_cubes_power))
