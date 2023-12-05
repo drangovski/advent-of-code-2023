@@ -12,8 +12,6 @@ symbols_list = [
     ']', '^', '_', '`', '{', '|', '}', '~'
 ]
     
-# find symbols and sybmols index position.
-# Append positon and symbol to a dict
 def find_symbols():
     line_symbols = {}
     line_id = 0
@@ -33,10 +31,6 @@ def find_symbols():
         line_symbols[line_id] = sorted(symbol_positions)
     return line_symbols
         
-
-# find numbers in line and numbers start and end index position. 
-# Store current line number. Append start/end index position
-# and the number to a dict.
 def find_numbers():
     line_numbers = {}
     line_id = 0
@@ -53,9 +47,6 @@ def find_numbers():
         line_numbers[line_id] = temp_numbers
     return line_numbers
 
-# find_numbers()
-# check if there is a symbol before and after the number
-# -1/+1 from the start/end index range
 def check_adjacent_symbol():
     line_numbers = find_numbers()
     line_symbols = find_symbols()
@@ -85,7 +76,6 @@ def check_adjacent_symbol():
                             if sym > index_left_offset and sym < index_right_offset:
                                 engine_numbers.append(number['number'])
 
-    print(engine_numbers)
     print(sum(engine_numbers))
 
 
