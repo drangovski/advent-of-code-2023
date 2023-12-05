@@ -5,7 +5,7 @@ engine_schematic_file = open('input', 'r')
 engine_schematic = engine_schematic_file.readlines()
 
 
-gears_list = [
+gears_symbol = [
     '*',
 ]
     
@@ -15,7 +15,7 @@ def find_gears():
     for line in engine_schematic:
         line = line.strip()
         gear_positions = []
-        for gear in gears_list:
+        for gear in gears_symbol:
             start_index = 0
             while start_index < len(line):
                 text_number_index = line.find(gear, start_index)
