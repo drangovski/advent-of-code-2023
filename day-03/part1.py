@@ -1,4 +1,3 @@
-import json
 import re
 
 engine_schematic_file = open('input', 'r')
