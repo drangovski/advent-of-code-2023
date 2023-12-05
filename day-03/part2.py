@@ -1,3 +1,4 @@
+# https://adventofcode.com/2023/day/3 
 import re
 import math
 

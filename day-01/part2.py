@@ -1,3 +1,4 @@
+# https://adventofcode.com/2023/day/1
 calibration_document = open('input', 'r')
 document_lines = calibration_document.readlines()
 

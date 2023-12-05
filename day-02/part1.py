@@ -1,3 +1,4 @@
+# https://adventofcode.com/2023/day/2
 games_list = open('input', 'r')
 document_lines = games_list.readlines()
 

@@ -1,3 +1,4 @@
+# https://adventofcode.com/2023/day/3
 import re
 
 engine_schematic_file = open('input', 'r')
