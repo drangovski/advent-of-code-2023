@@ -1,3 +1,4 @@
+# https://adventofcode.com/2023/day/4
 scratchcards_file = open('input', 'r')
 scratchcards = scratchcards_file.readlines()
 
